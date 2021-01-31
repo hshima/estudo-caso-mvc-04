@@ -1,5 +1,14 @@
+/home/runner/estudo-caso-mvc-04/projeto/src/main/java/org/example/models/participacao/Participacao.java
+/home/runner/estudo-caso-mvc-04/projeto/src/main/java/org/example/controllers/projeto/ListaProjetosServlet.java
 /home/runner/estudo-caso-mvc-04/projeto/src/main/java/org/example/models/departamento/DepartamentoGateway.java
-/home/runner/estudo-caso-mvc-04/projeto/src/main/java/org/example/HelloServlet.java
+/home/runner/estudo-caso-mvc-04/projeto/src/main/java/org/example/controllers/participacao/ListaParticipacoesServlet.java
+/home/runner/estudo-caso-mvc-04/projeto/src/main/java/org/example/models/projeto/Projeto.java
+/home/runner/estudo-caso-mvc-04/projeto/src/main/java/org/example/models/projeto/ProjetosGateway.java
 /home/runner/estudo-caso-mvc-04/projeto/src/main/java/org/example/models/ConnectionFactory.java
+/home/runner/estudo-caso-mvc-04/projeto/src/main/java/org/example/models/participacao/ParticipacoesGateway.java
+/home/runner/estudo-caso-mvc-04/projeto/src/main/java/org/example/models/funcionario/FuncionariosGateway.java
+/home/runner/estudo-caso-mvc-04/projeto/src/main/java/org/example/HelloServlet.java
+/home/runner/estudo-caso-mvc-04/projeto/src/main/java/org/example/controllers/funcionario/ListaFuncionariosServlet.java
 /home/runner/estudo-caso-mvc-04/projeto/src/main/java/org/example/models/departamento/Departamento.java
+/home/runner/estudo-caso-mvc-04/projeto/src/main/java/org/example/models/funcionario/Funcionario.java
 /home/runner/estudo-caso-mvc-04/projeto/src/main/java/org/example/controllers/departamento/ListaDepartamentosServlet.java

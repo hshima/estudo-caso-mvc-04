@@ -3,7 +3,8 @@ package org.example.models.departamento;
 import java.sql.*;
 import java.util.*;
 
-import org.example.models.ConnectionFactory;;
+import org.example.models.departamento.Departamento;
+import org.example.models.ConnectionFactory;
 
 public class DepartamentoGateway {
   private Connection conn = ConnectionFactory.getConnection();
@@ -21,6 +22,20 @@ public class DepartamentoGateway {
 
     return departamentos;
   }
+
+	public Departamento getByCodigo(Long codigo) throws SQLException {
+		
+		String SQL_INSERT = "SELECT * FROM departamentos WHERE codigo = ?;";
+		Statement statement = conn.createStatement();
+    PreparedStatement pstm = conn.prepareStatement(SQL_INSERT);
+    pstm.setLong(1, codigo);
+		ResultSet rs = pstm.executeQuery();
+		
+		if(rs.next()){
+			return new Departamento(rs.getInt("codigo"), rs.getString("nome"), rs.getString("sigla"));
+		}
+		throw new SQLException("Departamento não identificado");
+	}
 
   public void create(String nome, String sigla) throws SQLException {
     String SQL_INSERT = "INSERT INTO departamentos (nome, sigla) VALUES (?, ?);";
