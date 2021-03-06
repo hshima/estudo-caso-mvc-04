@@ -15,13 +15,54 @@
     <url-pattern>/hello/*</url-pattern>
   </servlet-mapping>
 
+	<!-- Departamento Listar -->
   <servlet>
     <servlet-name>ListaDepartamentos</servlet-name>
-    <servlet-class>org.example.ListaDepartamentosServlet</servlet-class>
+    <servlet-class>org.example.controllers.departamento.ListaDepartamentosServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>ListaDepartamentos</servlet-name>
     <url-pattern>/departamentos</url-pattern>
+  </servlet-mapping>
+
+	<!-- Dapartamento Cadastrar -->
+  <servlet>
+    <servlet-name>CadastraDepartamentos</servlet-name>
+    <servlet-class>org.example.controllers.departamento.CadastraDepartamentosServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CadastraDepartamentos</servlet-name>
+    <url-pattern>/departamentos/cadastrar</url-pattern>
+  </servlet-mapping>
+
+	<!-- funcionario -->
+	<servlet>
+    <servlet-name>ListaFuncionarios</servlet-name>
+    <servlet-class>org.example.controllers.funcionario.ListaFuncionariosServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListaFuncionarios</servlet-name>
+    <url-pattern>/funcionarios</url-pattern>
+  </servlet-mapping>
+
+	<!-- Participações-->
+		<servlet>
+    <servlet-name>ListaParticipacoes</servlet-name>
+    <servlet-class>org.example.controllers.participacao.ListaParticipacoesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListaParticipacoes</servlet-name>
+    <url-pattern>/participacoes</url-pattern>
+  </servlet-mapping>
+
+	<!-- Projetos -->
+		<servlet>
+    <servlet-name>ListaProjetos</servlet-name>
+    <servlet-class>org.example.controllers.projeto.ListaProjetosServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListaProjetos</servlet-name>
+    <url-pattern>/projetos</url-pattern>
   </servlet-mapping>
 
 </web-app>
