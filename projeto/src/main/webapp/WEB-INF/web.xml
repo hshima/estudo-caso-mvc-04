@@ -15,7 +15,7 @@
     <url-pattern>/hello/*</url-pattern>
   </servlet-mapping>
 
-	<!-- Departamento -->
+	<!-- Departamento Listar -->
   <servlet>
     <servlet-name>ListaDepartamentos</servlet-name>
     <servlet-class>org.example.controllers.departamento.ListaDepartamentosServlet</servlet-class>
@@ -23,6 +23,16 @@
   <servlet-mapping>
     <servlet-name>ListaDepartamentos</servlet-name>
     <url-pattern>/departamentos</url-pattern>
+  </servlet-mapping>
+
+	<!-- Dapartamento Cadastrar -->
+  <servlet>
+    <servlet-name>CadastraDepartamentos</servlet-name>
+    <servlet-class>org.example.controllers.departamento.CadastraDepartamentosServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CadastraDepartamentos</servlet-name>
+    <url-pattern>/departamentos/cadastrar</url-pattern>
   </servlet-mapping>
 
 	<!-- funcionario -->
